@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>мин макс</title>
+  </head>
+  <body>
+  	<button id="btn1">click me</button>>
+  	<button id="btn2">show</button>
+  	<textarea id="txt1" placeholder="enter your data"></textarea>
+  	<script type="text/javascript">
+  		let btn1 = document.getElementById('btn1');
+  		let btn2 = document.getElementById('btn2');
+  		let txt1 = document.getElementById('txt1');
+
+  		let count = 0;
+		let min = 0;
+		let max = 0;
+
+  		let arr = []
+
+  		btn1.onclick = function(){
+  			arr.push(txt1.value);
+  		}
+  		btn2.onclick = function(){
+			min = arr[0];
+			max = arr[0];
+  			for(let i = 1; i < arr.length; i++){
+				if(min > arr[i]){
+					min = arr[i];
+				}
+				if (max < arr[i]){
+					max = arr[i];
+				}
+			}
+  				console.log(min);
+				console.log(max);
+				alert("наибольшее число =" + max + "наименьшее число =" + min);
+  			}
+  	</script>
+  </body>
+</html>

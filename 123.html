@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn1">entering a number</button>>
+    <button id="btn2">fulfill mathmatical expectation</button>
+    <textarea id="txt1" placeholder="enter a number"></textarea>
+     <script>
+        let btn1 = document.getElementById('btn1');
+  		let btn2 = document.getElementById('btn2');
+  		let txt1 = document.getElementById('txt1');
+
+        let arr = [];
+        let random = 1;
+        let sum = 0;
+
+        btn1.onclick = function(){
+            arr.push(txt.value);
+        }
+
+        btn2.onclick = function(){
+            random = 1/arr.lenght;
+            for(let i = 0; i < arr.length; i ++){
+                sum += arr[i] * random;
+                console.log(sum);
+            }
+            alert(math.round(sum));
+        }
+     </script>
+</body>
+</html>
